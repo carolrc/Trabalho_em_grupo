@@ -53,8 +53,6 @@ def menu():
                     VOCÊ ENCERROU A COLETA DE DADOS
                   ===================================
                   ''')
-            break
-
-        print(idade, genero, resposta_1, resposta_2, resposta_3, resposta_4)   
+            break  
 
 menu()
