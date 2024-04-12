@@ -1,4 +1,8 @@
+import csv
 lista = []
+arquivo_csv = open('dados.csv', 'w')
+escritor = csv.writer(arquivo_csv)
+
 
 class Pesquisa:
     def __init__(self, idade, genero, resposta_1, resposta_2, resposta_3, resposta_4, data_hora):
@@ -86,5 +90,7 @@ def menu():
         entrevistado.armazenar()
 
 menu()
-
 print(lista)
+for usuario in lista:
+        escritor.writerow([usuario])
+arquivo_csv.close()
