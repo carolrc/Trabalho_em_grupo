@@ -1,8 +1,11 @@
+#importações para facilitar o processo
 import csv
 from datetime import datetime
 
+#classe para escrever/armazenar no arquivo csv
 class Pesquisa:
-    
+
+    #Estrutura para POO
     def __init__(self, idade, genero, resposta_1, resposta_2, resposta_3, resposta_4, data_hora):
         
         self.idade = idade
@@ -14,7 +17,8 @@ class Pesquisa:
         self.data_hora = data_hora
 
     def armazenar(self):
-        
+
+        #Abre o arquivo CSV em modo de append, especificando o ponto e vírgula como delimitador
         with open('dados.csv', mode='a', newline='') as arquivo_csv:
             
             cabecalhos = ['idade', 'genero', 'pergunta1', 'pergunta2', 'pergunta3', 'pergunta4', 'data_hora']
@@ -23,8 +27,10 @@ class Pesquisa:
             if arquivo_csv.tell() == 0:
                 escritor_csv.writerow(cabecalhos)
 
+            #escreve na linha
             escritor_csv.writerow([self.idade, self.genero, self.resposta_1, self.resposta_2, self.resposta_3, self.resposta_4, self.data_hora])
 
+#função para validação das perguntas
 def obter_resposta(pergunta):
     
     while True:
@@ -43,7 +49,7 @@ def obter_resposta(pergunta):
         else:
             print("Por favor, digite uma opção válida (1, 2 ou 3).")
 
-# Abrir o arquivo CSV em modo de escrita, especificando o ponto e vírgula como delimitador
+#Menu do usuário
 while True:
     
     idade = input('Qual a sua idade? (Digite "00" para encerrar): ')
@@ -58,11 +64,13 @@ while True:
             ======================================
             ''')
 
+        #respostas e perguntas
         resposta_1 = obter_resposta("PERGUNTA 1")
         resposta_2 = obter_resposta("PERGUNTA 2")
         resposta_3 = obter_resposta("PERGUNTA 3")
         resposta_4 = obter_resposta("PERGUNTA 4")
 
+        #data e hora da resposta
         data_hora = datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
         
         # Escrever os dados no arquivo CSV
