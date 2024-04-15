@@ -59,6 +59,17 @@ def exibir_grafico():
         colors = ['lightcoral', 'lightskyblue', 'yellowgreen']
         explode = (0.1, 0, 0)
 
+        # Criar o gráfico de pizza
+        plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct=lambda pct: f'{pct:.1f}%\n({int(pct * sum(sizes) / 100)})', shadow=True, startangle=140)
+
+        plt.legend(labels, loc="upper right")
+
+        plt.axis('equal')
+
+        plt.title('Respostas às perguntas')
+
+        plt.show()
+
 
 #função para validação das perguntas
 def obter_resposta(pergunta):
@@ -113,4 +124,7 @@ while True:
                 VOCÊ ENCERROU A COLETA DE DADOS
                 ===================================
                 ''')
+        
+        exibir_grafico()
+
         break
