@@ -1,11 +1,10 @@
 import csv
-lista = []
-arquivo_csv = open('dados.csv', 'w')
-escritor = csv.writer(arquivo_csv)
-
+from datetime import datetime
 
 class Pesquisa:
+    
     def __init__(self, idade, genero, resposta_1, resposta_2, resposta_3, resposta_4, data_hora):
+        
         self.idade = idade
         self.genero = genero
         self.resposta_1 = resposta_1
@@ -15,82 +14,65 @@ class Pesquisa:
         self.data_hora = data_hora
 
     def armazenar(self):
-        lista.append([self.data_hora, self.idade, self.genero, self.resposta_1, self.resposta_2,self.resposta_3,self.resposta_4])
-       
-    
-
-
-def menu():
-    idade=''
-    while True: 
-        idade = input('Qual a sua idade?')
-        if idade != '00':
-            genero = input('Qual o seu gênero?')
-
-            print('''
-                ======================================
-                        PESQUISA DE SEGUROS
-                ======================================
-                ''')
-            
-            resposta_1=''
-            resposta_2=''
-            resposta_3=''
-            resposta_4=''
-            
-            while resposta_1 != '1' and resposta_1 != '2' and resposta_1 != '3':
-                resposta_1 = input('''
-                    =============================
-                            PERGUNTA 1
-                    =============================
-                    1 - Sim
-                    2 - Não
-                    3 - Não sei          
-                    ''')
-            
-            while resposta_2 != '1' and resposta_2 != '2' and resposta_2 != '3':
-                resposta_2 = input('''
-                    =============================
-                            PERGUNTA 2
-                    =============================
-                    1 - Sim
-                    2 - Não
-                    3 - Não sei
-                    ''')
-
-            while resposta_3 != '1' and resposta_3 != '2' and resposta_3 != '3':
-                resposta_3 = input('''
-                    =============================
-                            PERGUNTA 3
-                    =============================
-                    1 - Sim
-                    2 - Não
-                    3 - Não sei
-                    ''')   
-
-            while resposta_4 != '1' and resposta_4 != '2' and resposta_4 != '3':
-                resposta_4 = input('''
-                    =============================
-                            PERGUNTA 4
-                    =============================
-                    1 - Sim
-                    2 - Não
-                    3 - Não sei
-                    ''')
         
-        else:
-            print('''
-                ===================================
-                    VOCÊ ENCERROU A COLETA DE DADOS
-                ===================================
-                ''')
-            break
+        with open('dados.csv', mode='a', newline='') as arquivo_csv:
+            
+            cabecalhos = ['idade', 'genero', 'pergunta1', 'pergunta2', 'pergunta3', 'pergunta4', 'data_hora']
+            escritor_csv = csv.writer(arquivo_csv, delimiter=';')
 
-        entrevistado = Pesquisa(idade, genero, resposta_1, resposta_2, resposta_3, resposta_4, 'código data e hora')
+            if arquivo_csv.tell() == 0:
+                escritor_csv.writerow(cabecalhos)
+
+            escritor_csv.writerow([self.idade, self.genero, self.resposta_1, self.resposta_2, self.resposta_3, self.resposta_4, self.data_hora])
+
+def obter_resposta(pergunta):
+    
+    while True:
+        
+        resposta = input(f'''
+            =============================
+                      {pergunta}
+            =============================
+            1 - Sim
+            2 - Não
+            3 - Não sei   
+            ''')
+        
+        if resposta in ['1', '2', '3']:
+            return resposta
+        else:
+            print("Por favor, digite uma opção válida (1, 2 ou 3).")
+
+# Abrir o arquivo CSV em modo de escrita, especificando o ponto e vírgula como delimitador
+while True:
+    
+    idade = input('Qual a sua idade? (Digite "00" para encerrar): ')
+
+    if idade != '00':
+        
+        genero = input('Qual o seu gênero? ')
+
+        print('''
+            ======================================
+                    PESQUISA DE SEGUROS
+            ======================================
+            ''')
+
+        resposta_1 = obter_resposta("PERGUNTA 1")
+        resposta_2 = obter_resposta("PERGUNTA 2")
+        resposta_3 = obter_resposta("PERGUNTA 3")
+        resposta_4 = obter_resposta("PERGUNTA 4")
+
+        data_hora = datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
+        
+        # Escrever os dados no arquivo CSV
+        entrevistado = Pesquisa(idade, genero, resposta_1, resposta_2, resposta_3, resposta_4, data_hora)
         entrevistado.armazenar()
 
-menu()
-print(lista)
-for usuario in lista:
-        escritor.writerow([usuario])
-arquivo_csv.close()
+    else:
+        print('''
+                ===================================
+                VOCÊ ENCERROU A COLETA DE DADOS
+                ===================================
+                ''')
+        break
