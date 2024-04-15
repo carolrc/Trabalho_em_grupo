@@ -1,6 +1,7 @@
 #importações para facilitar o processo
 import csv
 from datetime import datetime
+import matplotlib.pyplot as plt
 
 #classe para escrever/armazenar no arquivo csv
 class Pesquisa:
@@ -29,6 +30,17 @@ class Pesquisa:
 
             #escreve na linha
             escritor_csv.writerow([self.idade, self.genero, self.resposta_1, self.resposta_2, self.resposta_3, self.resposta_4, self.data_hora])
+
+def exibir_grafico():
+
+    with open('dados.csv', mode='r', newline='') as arquivo_csv:
+
+        leitor_csv = csv.reader(arquivo_csv, delimiter=';')
+        
+        # Pular o cabeçalho
+        next(leitor_csv)
+
+        qtd_sim, qtd_nao, qtd_nao_sei = 0, 0, 0
 
 #função para validação das perguntas
 def obter_resposta(pergunta):
