@@ -1,6 +1,7 @@
 #importações para facilitar o processo
 import csv
 from datetime import datetime
+import matplotlib.pyplot as plt
 
 #classe para escrever/armazenar no arquivo csv
 class Pesquisa:
@@ -29,6 +30,46 @@ class Pesquisa:
 
             #escreve na linha
             escritor_csv.writerow([self.idade, self.genero, self.resposta_1, self.resposta_2, self.resposta_3, self.resposta_4, self.data_hora])
+
+def exibir_grafico():
+
+    with open('dados.csv', mode='r', newline='') as arquivo_csv:
+
+        leitor_csv = csv.reader(arquivo_csv, delimiter=';')
+        
+        # Pular o cabeçalho
+        next(leitor_csv)
+
+        qtd_sim, qtd_nao, qtd_nao_sei = 0, 0, 0
+
+        # Passa por cada linha do arquivo
+        for linha in leitor_csv:
+            
+            # Pega as respostas especificas
+            r1, r2, r3, r4 = linha[2:6]
+
+            # Atualiza os contadores
+            qtd_sim += r1.count('1') + r2.count('1') + r3.count('1') + r4.count('1')
+            qtd_nao += r1.count('2') + r2.count('2') + r3.count('2') + r4.count('2')
+            qtd_nao_sei += r1.count('3') + r2.count('3') + r3.count('3') + r4.count('3')
+
+        # Dados para o gráfico de pizza
+        labels = 'Sim', 'Não', 'Não sei'
+        sizes = [qtd_sim, qtd_nao, qtd_nao_sei]
+        colors = ['lightcoral', 'lightskyblue', 'yellowgreen']
+        explode = (0.1, 0, 0)
+
+        # Criar o gráfico de pizza
+        plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct=lambda pct: f'{pct:.1f}%\n({int(pct * sum(sizes) / 100)})', shadow=True, startangle=140)
+
+        plt.legend(labels, loc="upper right")
+
+        plt.axis('equal')
+
+        plt.title('Respostas às perguntas')
+
+        plt.show()
+
 
 #função para validação das perguntas
 def obter_resposta(pergunta):
@@ -83,4 +124,7 @@ while True:
                 VOCÊ ENCERROU A COLETA DE DADOS
                 ===================================
                 ''')
+        
+        exibir_grafico()
+
         break
