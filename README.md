@@ -32,7 +32,8 @@
 ##
 
 ### Introdução ao projeto
-<img src="![capa-slide](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo/assets/113737080/403631a0-f393-43e5-b5bd-2fd2aa9ce464)">
+<img src="![capa-slide](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo/assets/113737080/858b0512-f716-44b8-9d42-a8a5ab251f36)
+">
 <i>O mercado segurador como uma pesquisa quantitativa pode ser uma 
 excelente decisão por várias razões:</i><br><br>
 
