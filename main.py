@@ -3,6 +3,8 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 
+
+
 #classe para escrever/armazenar no arquivo csv
 class Pesquisa:
 
@@ -24,14 +26,16 @@ class Pesquisa:
         #Abre o arquivo CSV em modo de append, especificando o ponto e vírgula como delimitador
         with open('dados.csv', mode='a', newline='') as arquivo_csv:
             
-            cabecalhos = ['idade', 'genero', 'pergunta1', 'pergunta2', 'pergunta3', 'pergunta4', 'pergunta5', 'pergunta6' 'data_hora']
+            cabecalhos = ['idade', 'genero', 'pergunta1', 'pergunta2', 'pergunta3', 'pergunta4', 'pergunta5', 'pergunta6', 'data_hora']
             escritor_csv = csv.writer(arquivo_csv, delimiter=';')
 
             if arquivo_csv.tell() == 0:
                 escritor_csv.writerow(cabecalhos)
 
             #escreve na linha
+
             escritor_csv.writerow([self.idade, self.genero, self.resposta_1, self.resposta_2, self.resposta_3, self.resposta_4, self.resposta_5, self.resposta_6, self.data_hora])
+
 
 def exibir_grafico():
 
@@ -132,3 +136,4 @@ while True:
         exibir_grafico()
 
         break
+
