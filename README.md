@@ -11,14 +11,14 @@
 
 ##
 ### Requisitos
-- ✅ A entrada dos dados deverá ser realizada pelo teclado utilizando estruturas de repetição;
-- ✅ Estruturas condicionais e de repetição devem ser utilizadas;
-- ✅ Estruturas de dados devem ser utilizadas (listas, pilhas, filas ou dicionários), quando for possível o uso;
-- ✅ Deverá ser utilizada a estrutura de funções, quando for possível o uso;
-- ✅ Deve ser utilizado o paradigma de orientação a objetos;
-- ✅ O projeto desenvolvido deverá ser disponibilizado em repositório no GitHub;
-- ✅ O projeto desenvolvido deverá estar funcional, ou seja, caso seja necessário algum teste durante a apresentação ou correção do trabalho, ele deve estar funcionando normalmente.
-- ✅ Seu projeto precisa possuir uma evidência de entrega no arquivo README.md.
+ ✅ A entrada dos dados deverá ser realizada pelo teclado utilizando estruturas de repetição;
+ ✅ Estruturas condicionais e de repetição devem ser utilizadas;
+ ✅ Estruturas de dados devem ser utilizadas (listas, pilhas, filas ou dicionários), quando for possível o uso;
+ ✅ Deverá ser utilizada a estrutura de funções, quando for possível o uso;
+ ✅ Deve ser utilizado o paradigma de orientação a objetos;
+ ✅ O projeto desenvolvido deverá ser disponibilizado em repositório no GitHub;
+ ✅ O projeto desenvolvido deverá estar funcional, ou seja, caso seja necessário algum teste durante a apresentação ou correção do trabalho, ele deve estar funcionando normalmente.
+ ✅ Seu projeto precisa possuir uma evidência de entrega no arquivo README.md.
 ##
 
 ##
