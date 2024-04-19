@@ -44,7 +44,7 @@ pip install matplotlib
 
 ## Introdução ao Projeto
 
-![Imagem do Projeto](https://ibb.co/hZr23W8)
+![Imagem do Projeto](https://i.ibb.co/P9J1qhC/1.jpg)
 A pesquisa no mercado segurador, como uma pesquisa quantitativa, pode ser uma excelente decisão por várias razões:
 - Economia;
 - Ampla gama de tópicos;
@@ -65,9 +65,9 @@ As perguntas em uma pesquisa sobre seguros têm o objetivo de obter insights sob
 
 ## Dados
 
-![Imagem do Gráfico](https://i.ibb.co/P9J1qhC/1.jpg)
+![Imagem do Gráfico](https://i.ibb.co/p3VHYGt/3.jpg)
 
-![Imagem do Gráfico](https://ibb.co/YPmzRW1)
+![Imagem do Gráfico](https://i.ibb.co/S5bhsxM/2.jpg)
 O projeto coleta os dados inseridos pelos usuários em resposta às perguntas da pesquisa. Esses dados são armazenados em um arquivo CSV para posterior análise e visualização, como um gráfico de pizza mostrando a distribuição das respostas.
 
 
