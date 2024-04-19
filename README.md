@@ -24,7 +24,7 @@
 ##
 ### Executando o projeto
 - O projeto pode ser executado online acessado através do link <https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo>
-- O projeto também pode ser executado em servidor local, baixando uma cópia dos arquivos nos repositórios, acessando os links e abrindo o arquivo em Python "Main.py".
+- O projeto também pode ser executado em servidor local, baixando uma cópia dos arquivos nos repositórios, acessando os links e abrindo o arquivo "Main.py" com o Python já instalado em sua máquina.
 - Após o download e a inicialização, será necessário utilizar os comandos a seguir no terminal.
 >npm install<br>
 >pip install matplotlib
@@ -32,8 +32,7 @@
 ##
 
 ### Introdução ao projeto
-<img src="![capa-slide](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo/assets/113737080/858b0512-f716-44b8-9d42-a8a5ab251f36)
-">
+<img src="">
 <i>O mercado segurador como uma pesquisa quantitativa pode ser uma 
 excelente decisão por várias razões:</i><br><br>
 
