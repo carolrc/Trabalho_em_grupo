@@ -14,7 +14,6 @@ def importar_csv_para_lista(nome_arquivo):
 # Substitua 'arquivo.csv' pelo caminho do seu arquivo CSV
 nome_arquivo = 'dados2.csv'
 dados = importar_csv_para_lista(nome_arquivo)
-print(dados)
 
 i=0
 while(i<len(dados)):
@@ -27,7 +26,6 @@ while(i<len(dados)):
 
         #escreve na linha
         escritor_csv.writerow(dados[i])
-        print(dados[i])
     i = i+1
 
 #classe para escrever/armazenar no arquivo csv
