@@ -65,7 +65,7 @@ As perguntas em uma pesquisa sobre seguros têm o objetivo de obter insights sob
 
 ## Dados
 
-![Imagem do Gráfico](https://ibb.co/19yCFhD)
+![Imagem do Gráfico](https://i.ibb.co/P9J1qhC/1.jpg)
 
 ![Imagem do Gráfico](https://ibb.co/YPmzRW1)
 O projeto coleta os dados inseridos pelos usuários em resposta às perguntas da pesquisa. Esses dados são armazenados em um arquivo CSV para posterior análise e visualização, como um gráfico de pizza mostrando a distribuição das respostas.
