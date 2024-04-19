@@ -1,63 +1,74 @@
-# Projeto em grupo do Módulo 1 - Data analitcs
-### Integrantes do SQUAD
- <a href="https://github.com/ThiagoJaime">Thiago Santos</a> - Pessoa Gestora do Conhecimento
- <a href="https://github.com/Diego-Fernando-Reis">Diego Fernando</a> - Pessoa Co-Facilitadora
- <a href="https://github.com/DaviJust">Davi Justino</a> - Pessoa Gestora de Gente e Engajamento
- <a href="https://github.com/carolrc">Carolina Rocha</a> - Colaborador I 
- <a href="">Tássio Felipe</a> - Colaborador II
-##
-### Proposta
--  Desenvolver um projeto capaz de armazenar dados recolhidos na pesquisa em um documento csv. As perguntas para essa pesquisa (assim como o tema dela) devem ser definidas pelo grupo.
+# Projeto do Módulo 1 - Data Analytics
 
-##
-### Requisitos
- ✅ A entrada dos dados deverá ser realizada pelo teclado utilizando estruturas de repetição;
- ✅ Estruturas condicionais e de repetição devem ser utilizadas;
- ✅ Estruturas de dados devem ser utilizadas (listas, pilhas, filas ou dicionários), quando for possível o uso;
- ✅ Deverá ser utilizada a estrutura de funções, quando for possível o uso;
- ✅ Deve ser utilizado o paradigma de orientação a objetos;
- ✅ O projeto desenvolvido deverá ser disponibilizado em repositório no GitHub;
- ✅ O projeto desenvolvido deverá estar funcional, ou seja, caso seja necessário algum teste durante a apresentação ou correção do trabalho, ele deve estar funcionando normalmente.
- ✅ Seu projeto precisa possuir uma evidência de entrega no arquivo README.md.
-##
+### Integrantes do Squad
+- <a href="https://github.com/ThiagoJaime">Thiago Santos</a> - Pessoa Gestora do Conhecimento
+- <a href="https://github.com/Diego-Fernando-Reis">Diego Fernando</a> - Pessoa Co-Facilitadora
+- <a href="https://github.com/DaviJust">Davi Justino</a> - Pessoa Gestora de Gente e Engajamento
+- <a href="https://github.com/carolrc">Carolina Rocha</a> - Colaborador I
+- <a href="">Tássio Felipe</a> - Colaborador II
 
-##
-### Executando o projeto
-- O projeto pode ser executado online acessado através do link <https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo>
-- O projeto também pode ser executado em servidor local, baixando uma cópia dos arquivos nos repositórios, acessando os links e abrindo o arquivo em Python "Main.py".
-- Após o download e a inicialização, será necessário utilizar os comandos a seguir no terminal.
->npm install<br>
->pip install matplotlib
-- O servidor local será iniciado no navegador. Em seguida, mostrará a tabela com dados do usuário.
-##
+## Proposta
 
-### Introdução ao projeto
-<img src="![capa-slide](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo/assets/113737080/858b0512-f716-44b8-9d42-a8a5ab251f36)
-">
-<i>O mercado segurador como uma pesquisa quantitativa pode ser uma 
-excelente decisão por várias razões:</i><br><br>
+Desenvolver um projeto capaz de armazenar dados recolhidos em uma pesquisa em um documento CSV. As perguntas para essa pesquisa (assim como o tema dela) devem ser definidas pelo grupo.
 
- ✅ Economia;
- ✅ Ampla gama tópicos;
- ✅ Decisão baseada em dados;
- ✅ Identificação de tendências;
- ✅ Deve ser utilizado o paradigma de orientação a objetos;
- ✅ Conhecimento acadêmico.
+## Requisitos
+- A entrada dos dados deverá ser realizada pelo teclado utilizando estruturas de repetição;
+- Estruturas condicionais e de repetição devem ser utilizadas;
+- Estruturas de dados devem ser utilizadas (listas, pilhas, filas ou dicionários), quando for possível o uso;
+- Deverá ser utilizada a estrutura de funções, quando for possível o uso;
+- Deve ser utilizado o paradigma de orientação a objetos;
+- O projeto desenvolvido deverá ser disponibilizado em um repositório no GitHub;
+- O projeto desenvolvido deverá estar funcional, ou seja, caso seja necessário algum teste durante a apresentação ou correção do trabalho, ele deve estar funcionando normalmente;
+- Seu projeto precisa possuir uma evidência de entrega no arquivo README.md.
 
-  ### Perguntas
+## Executando o Projeto
 
- As perguntas em uma pesquisa sobre seguros têm o objetivo de obter insights sobre a percepção, experiência e comportamento dos entrevistados em relação aos seguros. 
+### Online
+O projeto pode ser executado online acessando o link [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
 
-- Conhece algum tipo de seguro?
-- Possui algum tipo de seguro atualmente?
-- Conhece alguém que usa seguros?
-- Já fez alguma reclamação ou acionou seu seguro nos últimos 12 meses?
-- Considera que os prêmios de seguro são acessíveis atualmente?
-- Confia na capacidade das seguradoras de pagar indenizações quando necessário?
+### Localmente
+1. Faça o download do projeto clicando em "Code" e em seguida "Download ZIP" no [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
+2. Extraia o arquivo ZIP em uma pasta de sua preferência.
+3. Abra o terminal e navegue até o diretório onde você extraiu os arquivos.
+4. Baixe o Python na sua máquina e instale a extensão.
+5. Abra o arquivo "Main.py"
+6. Execute os seguintes comandos:
 
-### Dados
-<img src="![WhatsApp Image 2024-04-16 at 10 35 29](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo/assets/113737080/3c7e2aa4-4532-4415-aa80-16ac853c5d40)">
+npm install
 
+7. O servidor local será iniciado e você poderá acessar o projeto pelo navegador.
+
+pip install matplotlib
+
+8. Executando o comando, será visualizado o gráfico em Python.
+
+## Introdução ao Projeto
+
+![Imagem do Projeto](https://drive.google.com/file/d/1tA19AyWbuYzSimVnFnuo_gzbhCDpDB5I/view?usp=sharing)
+A pesquisa no mercado segurador, como uma pesquisa quantitativa, pode ser uma excelente decisão por várias razões:
+- Economia;
+- Ampla gama de tópicos;
+- Decisão baseada em dados;
+- Identificação de tendências;
+- Conhecimento acadêmico.
+
+## Perguntas
+
+As perguntas em uma pesquisa sobre seguros têm o objetivo de obter insights sobre a percepção, experiência e comportamento dos entrevistados em relação aos seguros.
+
+1. Conhece algum tipo de seguro?
+2. Possui algum tipo de seguro atualmente?
+3. Conhece alguém que usa seguros?
+4. Já fez alguma reclamação ou acionou seu seguro nos últimos 12 meses?
+5. Considera que os prêmios de seguro são acessíveis atualmente?
+6. Confia na capacidade das seguradoras de pagar indenizações quando necessário?
+
+## Dados
+
+![Imagem do Gráfico](https://drive.google.com/file/d/1gbhwxnSJqQys1YBsVhatt_2XT19vlxGz/view?usp=sharing)
+
+![Imagem do Gráfico](https://drive.google.com/file/d/1J8u9s1z3GNWRXYdWCZ32tKFxzNj8-hXq/view?usp=sharing)
+O projeto coleta os dados inseridos pelos usuários em resposta às perguntas da pesquisa. Esses dados são armazenados em um arquivo CSV para posterior análise e visualização, como um gráfico de pizza mostrando a distribuição das respostas.
 
 
 
