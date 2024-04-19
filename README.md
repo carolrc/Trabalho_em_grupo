@@ -44,7 +44,7 @@ pip install matplotlib
 
 ## Introdução ao Projeto
 
-![Imagem do Projeto](https://i.ibb.co/P9J1qhC/1.jpg)
+![Imagem do Projeto](https://i.ibb.co/qWVy7X0/Whats-App-Image-2024-04-19-at-09-13-06.jpg)
 A pesquisa no mercado segurador, como uma pesquisa quantitativa, pode ser uma excelente decisão por várias razões:
 - Economia;
 - Ampla gama de tópicos;
