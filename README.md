@@ -27,10 +27,10 @@ Desenvolver um projeto capaz de armazenar dados recolhidos em uma pesquisa em um
 O projeto pode ser executado online acessando o link [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
 
 ### Localmente
-1. Faça o download do projeto clicando em "Code" e em seguida "Download ZIP" no [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
-2. Extraia o arquivo ZIP em uma pasta de sua preferência.
-3. Abra o terminal e navegue até o diretório onde você extraiu os arquivos.
-4. Baixe o Python na sua máquina e instale a extensão.
+1. Baixe o Python na sua máquina e instale a extensão.
+2. Faça o download do projeto clicando em "Code" e em seguida "Download ZIP" no [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
+3. Extraia o arquivo ZIP em uma pasta de sua preferência.
+4. Abra o terminal e navegue até o diretório onde você extraiu os arquivos.
 5. Abra o arquivo "Main.py"
 6. Execute os seguintes comandos:
 
